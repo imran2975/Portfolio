@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #c8d8e4;
+    padding: 10px;
+    z-index: 1;
+}
+
+header h1{
+    margin-left: 10px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav li a:hover{
+    color: #047fa1;
+    text-decoration: underline;
+}
+
+.mob-nav{
+    display: none;
+}
+
+main{
+    position: relative;
+    top: 60px;
+}
+
+main .home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: #2b6777;
+    text-align: center;
+    color: #fff;
+}
+
+.home h1{
+    font-size: 2rem;
+}
+
+.home p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.home a{
+    text-decoration: none;
+    color: #000;
+    background-color: #c8d8e4;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.home i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.home a:hover{
+    outline: 3px solid #047fa1;
+    transition: 0.5s;
+}
+
+#about-me{
+    width: 100%;
+    height: 100vh;
+    background: #c8d8e4;
+}
+
+#about-me h1{
+    text-align: center;
+    padding: 20px;
+}
+
+#about-me i{
+    font-size: 20px;
+}
+
+.details{
+    display: flex;
+}
+
+.contents{
+    padding: 0 30px;
+}
+
+.more-detail{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-detail li{
+    margin: 20px 0;
+}
+
+#services{
+    background: #2b6777;
+    height: 100vh;
+    padding: 20px;
+}
+
+#services h1{
+    text-align: center;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+}
+
+.card{
+    background: #c8d8e4;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card:hover{
+    background: #047fa1;
+    color: #fff;
+    border: 3px solid #c8d8e4;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.card i{
+    font-size: 30px;
+}
+
+.card h4{
+    margin: 20px 0;
+}
+
+#projects{
+    background: #c8d8e4;
+    padding: 20px;
+    width: 100%;
+    height: 115vh;
+}
+
+#projects h1{
+    text-align: center;
+}
+
+.projects-details .card{
+    background: #2b6777;
+    color: #fff;
+    width: 35%;
+    padding-bottom: 20px;
+    cursor: default;
+}
+
+.projects-details .card:hover{
+    background: inherit;
+    color: #000;
+    border: 3px solid #2b6777;
+}
+
+.projects-details img{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.projects-details p{
+    margin-bottom: 10px;
+}
+
+.projects-details a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    background: #c8d8e4;
+    border: 2px solid #2b6777;
+    margin: 0 30px;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+/*CONTACT PAGE*/
+.container{
+    background: #2b6777;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    margin-top: 20px;
+    width: 30%;
+}
+
+form h1, form h4{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #c8d8e4;
+}
+
+.mssg{
+    margin-top: 45px;
+    border: 2px solid #047fa1;
+    padding: 10px;
+}
+
+form input, textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+button{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: #047fa1;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    header nav{
+        display: none;
+    }
+
+    .mob-nav{
+        display: inline-block;
+        position: relative;
+    }
+
+    .nav-button{
+        height: 3px;
+        width: 30px;
+        background: #000;
+        border-radius: 20px;
+        display: block;
+        margin-bottom: 2px;
+        margin-right: 15px;
+    }
+
+    .nav-link{
+        position: absolute;
+        top: 25px;
+        right: -10px;
+        width: 360px;
+        height: 0;
+        transition: height 1s;
+        overflow: hidden;
+        background: #c8d8e4;
+    }
+
+    .mob-nav:hover > .nav-link{
+        height: 155px;
+    }
+
+    .nav-link li{
+        margin: 10px 0;
+        border-bottom: 1px solid #2b6777;
+    }
+
+    .nav-link li a{
+        text-decoration: none;
+        color: #000;
+        margin: 15px 0;
+    }
+
+    .nav-link li a:hover{
+        color: #047fa1;
+        text-decoration: underline;
+    }
+
+    .home{
+        padding: 10px;
+    }
+    
+    #about-me{
+        width: 100%;
+        height: 78em !important;
+    }
+
+    .details{
+        display: block;
+    }
+
+    .details img{
+        width: 360px;
+    }
+
+    .more-detail{
+        display: block;
+        margin: 20px;
+    }
+
+    #services{
+        height: 132em;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .card{
+        margin: 10px 0;
+    }
+
+    #projects{
+        height: 355vh;
+    }
+
+    .projects-details .card{
+        width: 315px;
+    }
+
+    .projects-details img{
+        width: 296px;
+    }
+
+    .projects-details a{
+        margin: 0 ;
+        margin-left: 10px;
+    }
+
+    form{
+        width: 350px;
+    }
+}
